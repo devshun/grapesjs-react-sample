@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { initEditor } from './config';
+import { initEditor } from './grapesjs';
 
 function App() {
   useEffect(() => {
