@@ -4,12 +4,18 @@ import './index.css';
 
 import { deviceManager } from './managers/deviceManager';
 import { blockManager } from './managers/blockManager';
+import { styleManager } from './managers/styleManager';
+import { panelManager } from './managers/panelManager';
 
 export const initEditor = () => {
-  const editor = grapesjs.init({
+  grapesjs.init({
     container: '#gjs',
+    locale: "ja", 
     plugins: [],
-    deviceManager: deviceManager,
-    blockManager: blockManager,
+    // managers
+    deviceManager,
+    blockManager,
+    panelManager,
+    styleManager,
   });
 };
